@@ -1,0 +1,232 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Studies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Studies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Teaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#FirstName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#FirstName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#LastName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#LastName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#StaffID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#StaffID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#StudentID. -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#StudentID.">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#CSE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#CSE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Lecturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Lecturer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Math -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Math">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Module -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Module"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#CSE_101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#CSE_101">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#CSE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#CSE_103 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#CSE_103">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#CSE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Lec1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Lec1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Lecturer"/>
+        <Teaches rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#CSE_101"/>
+        <FirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X</FirstName>
+        <LastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Y</LastName>
+        <StaffID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</StaffID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Lec2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Lec2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Lecturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Math_138 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Math_138">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Math"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Waqar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Waqar">
+        <Studies rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#CSE_101"/>
+        <FirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Waqar Hassan</FirstName>
+        <LastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khan</LastName>
+        <StudentID. rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1505107</StudentID.>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#CSE"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Lecturer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Math"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/creatingClasses#Student"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
