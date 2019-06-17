@@ -4,6 +4,6 @@
 
 3. data properties -> describes relationship between instances, individuals or data values. set domain and range. range is the value
 
-4. how to comment : Active Ontology Tab -> hit Annotations -> writ comment
+4. how to comment : Active Ontology Tab -> hit Annotations -> write comment
 
 5. if a property b is inverse to property a, then range(b) = domain(a) and range(a) = domain(b). note that the domain-range will be determined autometically if the reasoner is ON and also in the reasoner config. -> object properies inference -> range and domain are checked

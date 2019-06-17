@@ -6,7 +6,9 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA">
+        <rdfs:comment>learning how protege works</rdfs:comment>
+    </owl:Ontology>
     
 
 
@@ -86,6 +88,67 @@
     
 
 
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#AmericanHotPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#AmericanHotPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#JalapenoPepperTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#MozzarellaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#PepperoniTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#TomatoTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>pepperoni, mozzarella and tomato toppings with Jalapeno
+peppers</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#AmericanPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#AmericanPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#MozzarellaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#PepperoniTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#TomatoTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>pepperoni, mozzarella and tomato toppings</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#AnchovyTopping -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#AnchovyTopping">
@@ -143,6 +206,27 @@
     
 
 
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#MargheritaPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#MargheritaPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#MozzarellaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#TomatoTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A pizza that only has Mozarella and Tomato toppings</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#MeatTopping -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#MeatTopping">
@@ -164,6 +248,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#MushroomTopping">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#NamedPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#NamedPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#Pizza"/>
     </owl:Class>
     
 
@@ -210,7 +302,15 @@
 
     <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#Pizza -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#Pizza"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#Pizza">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#hasBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#PizzaBase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -254,6 +354,39 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#SeaFoodTopping">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#SohoPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#SohoPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#MozzarellaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#OliveTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#PermezanTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#TomatoTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A pizza that has Mozarella , Tomato toppings , OliveTopping and ParmezanTopping</rdfs:comment>
     </owl:Class>
     
 
