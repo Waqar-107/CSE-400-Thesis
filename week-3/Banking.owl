@@ -1,0 +1,490 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2019/5/untitled-ontology-18"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/lenovo/ontologies/2019/5/untitled-ontology-18">
+    <Prefix name="" IRI="http://www.semanticweb.org/lenovo/ontologies/2019/5/untitled-ontology-18"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#ATM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Accountant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AccountsSection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BronzeCard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CarLoan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cashier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerSection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Customer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Departments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DepositeSection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Employees"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FixedDeposite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GoldCard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HouseBuildingLoan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Loan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LoanSection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NormalSavingsAccount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PremiumSavingsAccount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrincipalOfficer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SavingsAccount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeniorOfficer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ServerMaintainer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Services"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SilverCard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StandardSavingsAccount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tier1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tier2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WebsiteMaintainer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#CanBeGivenTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#CanGet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#LoanProp"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Work"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#gives"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#havePost"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#works"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#ATM"/>
+        <Class IRI="#Services"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accountant"/>
+        <Class IRI="#Employees"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accountant"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#CanGet"/>
+            <Class IRI="#HouseBuildingLoan"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accountant"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#works"/>
+            <Class IRI="#AccountsSection"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AccountsSection"/>
+        <Class IRI="#Departments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AccountsSection"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#havePost"/>
+            <Class IRI="#Accountant"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AccountsSection"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#havePost"/>
+            <Class IRI="#Cashier"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BronzeCard"/>
+        <Class IRI="#ATM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CarLoan"/>
+        <Class IRI="#Loan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cashier"/>
+        <Class IRI="#Employees"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cashier"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#CanGet"/>
+            <Class IRI="#HouseBuildingLoan"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cashier"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#works"/>
+            <Class IRI="#AccountsSection"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerSection"/>
+        <Class IRI="#Departments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerSection"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#havePost"/>
+            <Class IRI="#ServerMaintainer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerSection"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#havePost"/>
+            <Class IRI="#WebsiteMaintainer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Departments"/>
+        <Class IRI="#Bank"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DepositeSection"/>
+        <Class IRI="#Departments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DepositeSection"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#havePost"/>
+            <Class IRI="#SeniorOfficer"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Employees"/>
+        <Class IRI="#Bank"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FixedDeposite"/>
+        <Class IRI="#Services"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GoldCard"/>
+        <Class IRI="#ATM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HouseBuildingLoan"/>
+        <Class IRI="#Loan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Loan"/>
+        <Class IRI="#Services"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LoanSection"/>
+        <Class IRI="#Departments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LoanSection"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#havePost"/>
+            <Class IRI="#PrincipalOfficer"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NormalSavingsAccount"/>
+        <Class IRI="#SavingsAccount"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NormalSavingsAccount"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#gives"/>
+            <Class IRI="#BronzeCard"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PremiumSavingsAccount"/>
+        <Class IRI="#SavingsAccount"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PremiumSavingsAccount"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#gives"/>
+            <Class IRI="#GoldCard"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrincipalOfficer"/>
+        <Class IRI="#Employees"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrincipalOfficer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#CanGet"/>
+            <Class IRI="#Loan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrincipalOfficer"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#works"/>
+            <Class IRI="#LoanSection"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SavingsAccount"/>
+        <Class IRI="#Services"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeniorOfficer"/>
+        <Class IRI="#Employees"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeniorOfficer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#CanGet"/>
+            <Class IRI="#Loan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeniorOfficer"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#works"/>
+            <Class IRI="#DepositeSection"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ServerMaintainer"/>
+        <Class IRI="#Employees"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ServerMaintainer"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#CanGet"/>
+            <Class IRI="#CarLoan"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ServerMaintainer"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#works"/>
+            <Class IRI="#ComputerSection"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Services"/>
+        <Class IRI="#Bank"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SilverCard"/>
+        <Class IRI="#ATM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StandardSavingsAccount"/>
+        <Class IRI="#SavingsAccount"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StandardSavingsAccount"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#gives"/>
+            <Class IRI="#SilverCard"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tier1"/>
+        <Class IRI="#FixedDeposite"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tier2"/>
+        <Class IRI="#FixedDeposite"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WebsiteMaintainer"/>
+        <Class IRI="#Employees"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WebsiteMaintainer"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#CanGet"/>
+            <Class IRI="#CarLoan"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WebsiteMaintainer"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#works"/>
+            <Class IRI="#ComputerSection"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ATM"/>
+        <Class IRI="#FixedDeposite"/>
+        <Class IRI="#Loan"/>
+        <Class IRI="#SavingsAccount"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Accountant"/>
+        <Class IRI="#Cashier"/>
+        <Class IRI="#ServerMaintainer"/>
+        <Class IRI="#WebsiteMaintainer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AccountsSection"/>
+        <Class IRI="#ComputerSection"/>
+        <Class IRI="#DepositeSection"/>
+        <Class IRI="#LoanSection"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Bank"/>
+        <Class IRI="#Customer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BronzeCard"/>
+        <Class IRI="#GoldCard"/>
+        <Class IRI="#SilverCard"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CarLoan"/>
+        <Class IRI="#HouseBuildingLoan"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Departments"/>
+        <Class IRI="#Employees"/>
+        <Class IRI="#Services"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NormalSavingsAccount"/>
+        <Class IRI="#PremiumSavingsAccount"/>
+        <Class IRI="#StandardSavingsAccount"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Tier1"/>
+        <Class IRI="#Tier2"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#CanBeGivenTo"/>
+        <ObjectProperty IRI="#LoanProp"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#CanGet"/>
+        <ObjectProperty IRI="#LoanProp"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#LoanProp"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Work"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#gives"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#havePost"/>
+        <ObjectProperty IRI="#Work"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#works"/>
+        <ObjectProperty IRI="#Work"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#CanBeGivenTo"/>
+        <ObjectProperty IRI="#CanGet"/>
+    </InverseObjectProperties>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AccountsSection</IRI>
+        <Literal>manages account of people</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ComputerSection</IRI>
+        <Literal>maintains server and websites, atm codes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DepositeSection</IRI>
+        <Literal>handles fixed deposites</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LoanSection</IRI>
+        <Literal>handles loans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tier1</IRI>
+        <Literal>deposite for 10 years with monthly 12% interest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tier2</IRI>
+        <Literal>deposite for 5 years with 7% interest monthly</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

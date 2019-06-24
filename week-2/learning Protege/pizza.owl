@@ -304,12 +304,6 @@ peppers</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#Pizza">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#hasBase"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#PizzaBase"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -439,6 +433,15 @@ peppers</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#AmericanHotPizza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#AmericanPizza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#MargheritaPizza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2019/4/PIZZA#SohoPizza"/>
+        </owl:members>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
