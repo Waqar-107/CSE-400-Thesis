@@ -1,0 +1,445 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2019/5/FAMILY_ONTOLOGY"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/lenovo/ontologies/2019/5/FAMILY_ONTOLOGY">
+    <Prefix name="" IRI="http://www.semanticweb.org/lenovo/ontologies/2019/5/FAMILY_ONTOLOGY"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Aunt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Daughter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Father"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GrandFather"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GrandMother"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Man"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mother"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Son"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Uncle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Woman"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAunt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBrother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDaughter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFather"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isGrandFather"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isGrandMother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isGrandSon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isHusband"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isNephew"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSister"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isUncle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isWife"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAddress"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aleksander_Tiedemann"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Claudia_Tiedemann"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Egon_Tiedemann"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Helge_Doppler"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jana_Nielsen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mads_Nielsen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Magnus_Nielsen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Martha_Nielsen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Peter_Doppler"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tronte__Nielsen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ulrich_Nielsen"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Aunt"/>
+        <Class IRI="#Woman"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Daughter"/>
+        <Class IRI="#Woman"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Father"/>
+        <Class IRI="#Man"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GrandFather"/>
+        <Class IRI="#Man"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GrandMother"/>
+        <Class IRI="#Woman"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Man"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mother"/>
+        <Class IRI="#Woman"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Son"/>
+        <Class IRI="#Man"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Uncle"/>
+        <Class IRI="#Man"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Woman"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Aunt"/>
+        <Class IRI="#Daughter"/>
+        <Class IRI="#GrandMother"/>
+        <Class IRI="#Mother"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Father"/>
+        <Class IRI="#GrandFather"/>
+        <Class IRI="#Son"/>
+        <Class IRI="#Uncle"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Man"/>
+        <Class IRI="#Woman"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Father"/>
+        <NamedIndividual IRI="#Aleksander_Tiedemann"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mother"/>
+        <NamedIndividual IRI="#Claudia_Tiedemann"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GrandFather"/>
+        <NamedIndividual IRI="#Egon_Tiedemann"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GrandFather"/>
+        <NamedIndividual IRI="#Helge_Doppler"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GrandMother"/>
+        <NamedIndividual IRI="#Jana_Nielsen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Uncle"/>
+        <NamedIndividual IRI="#Mads_Nielsen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Son"/>
+        <NamedIndividual IRI="#Magnus_Nielsen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Daughter"/>
+        <NamedIndividual IRI="#Martha_Nielsen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Father"/>
+        <NamedIndividual IRI="#Peter_Doppler"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GrandFather"/>
+        <NamedIndividual IRI="#Tronte__Nielsen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Father"/>
+        <NamedIndividual IRI="#Ulrich_Nielsen"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAunt"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isBrother"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isDaughter"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isFather"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isGrandFather"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isGrandMother"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isGrandSon"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isHusband"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isMother"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isNephew"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSister"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSon"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isUncle"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isWife"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isHusband"/>
+        <ObjectProperty IRI="#isWife"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAunt"/>
+        <Class IRI="#Woman"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBrother"/>
+        <Class IRI="#Man"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDaughter"/>
+        <Class IRI="#Woman"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFather"/>
+        <Class IRI="#Man"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isGrandFather"/>
+        <Class IRI="#Man"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isGrandMother"/>
+        <Class IRI="#Woman"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isGrandSon"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isHusband"/>
+        <Class IRI="#Man"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMother"/>
+        <Class IRI="#Woman"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isNephew"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSister"/>
+        <Class IRI="#Woman"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSon"/>
+        <Class IRI="#Man"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isUncle"/>
+        <Class IRI="#Man"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isWife"/>
+        <Class IRI="#Woman"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAunt"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBrother"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDaughter"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFather"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isGrandFather"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isGrandMother"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isGrandSon"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isHusband"/>
+        <Class IRI="#Woman"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMother"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isNephew"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSister"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSon"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isUncle"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isWife"/>
+        <Class IRI="#Man"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAddress"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAge"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAddress"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAge"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAddress"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

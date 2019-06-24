@@ -120,6 +120,15 @@
     <Declaration>
         <ObjectProperty IRI="#works"/>
     </Declaration>
+    <Declaration>
+        <DataProperty IRI="#expireYear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWithdrawLimit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maxMoney"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="#ATM"/>
         <Class IRI="#Services"/>
@@ -452,6 +461,58 @@
         <ObjectProperty IRI="#CanBeGivenTo"/>
         <ObjectProperty IRI="#CanGet"/>
     </InverseObjectProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#expireYear"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasWithdrawLimit"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#maxMoney"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#expireYear"/>
+        <Class IRI="#FixedDeposite"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#expireYear"/>
+        <Class IRI="#Loan"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasWithdrawLimit"/>
+        <Class IRI="#SavingsAccount"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maxMoney"/>
+        <Class IRI="#ATM"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maxMoney"/>
+        <Class IRI="#Loan"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Class IRI="#FixedDeposite"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Class IRI="#Loan"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#expireYear"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWithdrawLimit"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maxMoney"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#AccountsSection</IRI>
