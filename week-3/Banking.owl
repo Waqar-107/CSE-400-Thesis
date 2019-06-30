@@ -118,17 +118,52 @@
         <ObjectProperty IRI="#havePost"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#works"/>
+        <ObjectProperty IRI="#works_in"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#expireYear"/>
+        <DataProperty IRI="#employeeQuantity"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasWithdrawLimit"/>
+        <DataProperty IRI="#expiryYear"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#maxMoney"/>
+        <DataProperty IRI="#hasAge"/>
     </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maxLimit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dip"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Imran"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Waqar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#atm1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#loan2"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#AccountsSection"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Departments"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#havePost"/>
+                <Class IRI="#Accountant"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#havePost"/>
+                <Class IRI="#Cashier"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#ATM"/>
         <Class IRI="#Services"/>
@@ -147,27 +182,9 @@
     <SubClassOf>
         <Class IRI="#Accountant"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#works"/>
+            <ObjectProperty IRI="#works_in"/>
             <Class IRI="#AccountsSection"/>
         </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#AccountsSection"/>
-        <Class IRI="#Departments"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#AccountsSection"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#havePost"/>
-            <Class IRI="#Accountant"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#AccountsSection"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#havePost"/>
-            <Class IRI="#Cashier"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#BronzeCard"/>
@@ -191,7 +208,7 @@
     <SubClassOf>
         <Class IRI="#Cashier"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#works"/>
+            <ObjectProperty IRI="#works_in"/>
             <Class IRI="#AccountsSection"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
@@ -295,7 +312,7 @@
     <SubClassOf>
         <Class IRI="#PrincipalOfficer"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#works"/>
+            <ObjectProperty IRI="#works_in"/>
             <Class IRI="#LoanSection"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
@@ -317,7 +334,7 @@
     <SubClassOf>
         <Class IRI="#SeniorOfficer"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#works"/>
+            <ObjectProperty IRI="#works_in"/>
             <Class IRI="#DepositeSection"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
@@ -335,7 +352,7 @@
     <SubClassOf>
         <Class IRI="#ServerMaintainer"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#works"/>
+            <ObjectProperty IRI="#works_in"/>
             <Class IRI="#ComputerSection"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
@@ -380,27 +397,15 @@
     <SubClassOf>
         <Class IRI="#WebsiteMaintainer"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#works"/>
+            <ObjectProperty IRI="#works_in"/>
             <Class IRI="#ComputerSection"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#ATM"/>
-        <Class IRI="#FixedDeposite"/>
-        <Class IRI="#Loan"/>
-        <Class IRI="#SavingsAccount"/>
-    </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Accountant"/>
         <Class IRI="#Cashier"/>
         <Class IRI="#ServerMaintainer"/>
         <Class IRI="#WebsiteMaintainer"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#AccountsSection"/>
-        <Class IRI="#ComputerSection"/>
-        <Class IRI="#DepositeSection"/>
-        <Class IRI="#LoanSection"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Bank"/>
@@ -429,6 +434,66 @@
         <Class IRI="#Tier1"/>
         <Class IRI="#Tier2"/>
     </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#ServerMaintainer"/>
+        <NamedIndividual IRI="#Dip"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Accountant"/>
+        <NamedIndividual IRI="#Imran"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WebsiteMaintainer"/>
+        <NamedIndividual IRI="#Waqar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GoldCard"/>
+        <NamedIndividual IRI="#atm1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HouseBuildingLoan"/>
+        <NamedIndividual IRI="#loan2"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Dip"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Dip"/>
+        <Literal>Sourav Saha Dip</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Imran"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Imran"/>
+        <Literal>Al Imran</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Waqar"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Waqar"/>
+        <Literal>Waqar Hassan Khan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxLimit"/>
+        <NamedIndividual IRI="#atm1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxLimit"/>
+        <NamedIndividual IRI="#loan2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2000000</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#CanBeGivenTo"/>
         <ObjectProperty IRI="#LoanProp"/>
@@ -454,65 +519,44 @@
         <ObjectProperty IRI="#Work"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#works"/>
+        <ObjectProperty IRI="#works_in"/>
         <ObjectProperty IRI="#Work"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="#CanBeGivenTo"/>
         <ObjectProperty IRI="#CanGet"/>
     </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Work"/>
+        <ObjectProperty IRI="#works_in"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#works_in"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#works_in"/>
+        <Class IRI="#Departments"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#works_in"/>
+        <Class IRI="#Employees"/>
+    </ObjectPropertyRange>
     <SubDataPropertyOf>
-        <DataProperty IRI="#expireYear"/>
+        <DataProperty IRI="#employeeQuantity"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#hasWithdrawLimit"/>
+        <DataProperty IRI="#expiryYear"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#maxMoney"/>
+        <DataProperty IRI="#hasAge"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
-    <DataPropertyDomain>
-        <DataProperty IRI="#expireYear"/>
-        <Class IRI="#FixedDeposite"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#expireYear"/>
-        <Class IRI="#Loan"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasWithdrawLimit"/>
-        <Class IRI="#SavingsAccount"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#maxMoney"/>
-        <Class IRI="#ATM"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#maxMoney"/>
-        <Class IRI="#Loan"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasName"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-        <Class IRI="#FixedDeposite"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-        <Class IRI="#Loan"/>
-    </DataPropertyDomain>
-    <DataPropertyRange>
-        <DataProperty IRI="#expireYear"/>
-        <Datatype abbreviatedIRI="xsd:int"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasWithdrawLimit"/>
-        <Datatype abbreviatedIRI="xsd:int"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#maxMoney"/>
-        <Datatype abbreviatedIRI="xsd:int"/>
-    </DataPropertyRange>
+    </SubDataPropertyOf>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#AccountsSection</IRI>
