@@ -164,6 +164,40 @@
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ComputerSection"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Departments"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#havePost"/>
+                <Class IRI="#ServerMaintainer"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#havePost"/>
+                <Class IRI="#WebsiteMaintainer"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DepositeSection"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Departments"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#havePost"/>
+                <Class IRI="#SeniorOfficer"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LoanSection"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Departments"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#havePost"/>
+                <Class IRI="#PrincipalOfficer"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#ATM"/>
         <Class IRI="#Services"/>
@@ -213,37 +247,8 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ComputerSection"/>
-        <Class IRI="#Departments"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ComputerSection"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#havePost"/>
-            <Class IRI="#ServerMaintainer"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ComputerSection"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#havePost"/>
-            <Class IRI="#WebsiteMaintainer"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Departments"/>
         <Class IRI="#Bank"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DepositeSection"/>
-        <Class IRI="#Departments"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DepositeSection"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#havePost"/>
-            <Class IRI="#SeniorOfficer"/>
-        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Employees"/>
@@ -264,17 +269,6 @@
     <SubClassOf>
         <Class IRI="#Loan"/>
         <Class IRI="#Services"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LoanSection"/>
-        <Class IRI="#Departments"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LoanSection"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#havePost"/>
-            <Class IRI="#PrincipalOfficer"/>
-        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NormalSavingsAccount"/>
@@ -402,12 +396,6 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="#Accountant"/>
-        <Class IRI="#Cashier"/>
-        <Class IRI="#ServerMaintainer"/>
-        <Class IRI="#WebsiteMaintainer"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#Bank"/>
         <Class IRI="#Customer"/>
     </DisjointClasses>
@@ -419,11 +407,6 @@
     <DisjointClasses>
         <Class IRI="#CarLoan"/>
         <Class IRI="#HouseBuildingLoan"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Departments"/>
-        <Class IRI="#Employees"/>
-        <Class IRI="#Services"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#NormalSavingsAccount"/>
