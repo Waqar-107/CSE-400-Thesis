@@ -1,0 +1,8 @@
+1. upload image
+2. preview form
+3. edit form
+4. confirm form
+5. printf pdf
+6. mark E,T,S,R
+7. download money receipt
+8. finally confirm
