@@ -16,3 +16,6 @@ week-6 : finding some literature on ontology(the papers are kept in the folder n
 week-7 : reading the paper named "CodeOntology: RDF-ization of Source Code"
 
 week-8 : implementing the theory of paper of previous week -> rdf triples
+
+week-14 : `Ontology Based Requirements Analysis:
+Lightweight Semantic Processing Approach` - drawn some models for buet admission test software using the theory of this paper
