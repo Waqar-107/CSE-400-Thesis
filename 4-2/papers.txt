@@ -1,0 +1,18 @@
+1. generic RE ontology - A requirement ontology for engineering design - https://journals.sagepub.com/doi/abs/10.1177/1063293x9600400307 - cited by 224
+
+2. security ontology - https://link.springer.com/chapter/10.1007/11575801_34 - Security ontology for annotating resources - 208
+
+3. Towards_Ontology_driven_Requirements_Eng - 92
+
+4. Using Ontologies and machine learning for hazard identification and safety analysis - 10 - S13
+
+5. A Verification Method of Elicited Software Requirements Using Requirements Ontology - - https://ieeexplore.ieee.org/abstract/document/6462709 - 9
+
+6. A Supporting Tool for Requirements Elicitation Using a
+Domain Ontology - 28 - proposed a tool-https://link.springer.com/chapter/10.1007/978-3-540-88655-6_10
+
+
+
+SRS
+-----------------------------------------------------------------------
+1. Evaluating the Software Requirements Specifications Using Ontology-Based Intelligent Agent

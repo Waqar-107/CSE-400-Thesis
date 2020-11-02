@@ -1,0 +1,7 @@
+ces is a research center in buet that researches with renewable energies.
+we need a website where we can,
+show our papers
+show our events. we can upload slides and live video links.
+it will display our addres and direction to our office
+it will have a home page where there will the recent papers, events and some words about the institute.
+there will be a page where there will be the plans of the ces.

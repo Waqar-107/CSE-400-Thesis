@@ -1,0 +1,20 @@
+Ostag project:
+https://ju.se/en/research/research-groups/computer-science-and-informatics/research-projects/ostag.html
+
+
+
+
+
+
+
+
+
+
+
+Unsupervised ontology acquisition from plain texts: the OntoGain system
+citation: 58
+yeaar: 2010
+
+Crctol: a semantic-based domain ontology learning system
+citation: 128
+year: 2010
