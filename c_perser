@@ -1,0 +1,17 @@
+1.thing:
+
+1.1 data type
+1.1.1 integer
+1.1.2 float
+1.1.3 char
+
+1.2 operators
+1.2.1 =
+1.2.2 <
+1.2.3 >
+1.2.4 ||
+
+dataType has-instance int
+variable has-instance var_a
+
+var_a is typeOf int
